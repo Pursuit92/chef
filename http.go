@@ -100,7 +100,8 @@ func (body *Body) Hash() (h string) {
 
 // ContentType returns the content-type string of Body as detected by http.DetectContentType()
 func (body *Body) ContentType() string {
-	return http.DetectContentType(body.Buffer().Bytes())
+	//return http.DetectContentType(body.Buffer().Bytes())
+	return "application/json"
 }
 
 func (r *ErrorResponse) Error() string {
