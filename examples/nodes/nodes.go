@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/go-chef/chef"
+	"github.com/Pursuit92/chef"
 )
 
 func main() {

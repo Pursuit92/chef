@@ -2,8 +2,8 @@
 This is a chef server api client.
 This Library can be used to write tools to interact with the chef server.
 
-The testing can be run with `go test`, and the client can be used as per normal via `go get github.com/go-chef/chef`
-Documentation can be found on GoDoc at  http://godoc.org/github.com/go-chef/chef
+The testing can be run with `go test`, and the client can be used as per normal via `go get github.com/Pursuit92/chef`
+Documentation can be found on GoDoc at  http://godoc.org/github.com/Pursuit92/chef
 
 This is example code generating a new node on the chef-server.
 
@@ -17,7 +17,7 @@ This is example code generating a new node on the chef-server.
 			"log"
 			"os"
 
-			"github.com/go-chef/chef"
+			"github.com/Pursuit92/chef"
 		)
 
 		func main() {

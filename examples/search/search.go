@@ -8,7 +8,7 @@ import (
 	"os"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/go-chef/chef"
+	"github.com/Pursuit92/chef"
 )
 
 func main() {

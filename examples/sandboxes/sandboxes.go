@@ -11,7 +11,7 @@ import (
 
 	"github.com/cenkalti/backoff"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/go-chef/chef"
+	"github.com/Pursuit92/chef"
 )
 
 //random_data makes random byte slice for building junk sandbox data
