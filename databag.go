@@ -91,6 +91,13 @@ func (d *DataBagService) GetItem(databagName, databagItem string) (item DataBagI
 
 // UpdateItem updates an item in a data bag
 //    Chef API Docs: http://docs.getchef.com/api_chef_server.html#id24
-func (d *DataBagService) UpdateItem() (err error) {
+func (d *DataBagService) UpdateItem(databagName, databagItem string, data DataBagItem) (err error) {
+	body, err := JSONReader(data)
+	if err != nil {
+		return err
+	}
+
+	path := fmt.Sprintf("data/%s/%s", databagName, databagItem)
+	err = d.client.magicRequestDecoder("PUT", path, body, nil)
 	return
 }
