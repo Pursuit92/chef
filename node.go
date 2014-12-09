@@ -8,14 +8,14 @@ type NodeService struct {
 
 // Node represents the native Go version of the deserialized Node type
 type Node struct {
-	Name                string                 `json:"name"`
+	Name                string                 `json:"name,omitempty"`
 	Environment         string                 `json:"chef_environment"`
-	ChefType            string                 `json:"chef_type"`
-	AutomaticAttributes map[string]interface{} `json:"automatic"`
+	ChefType            string                 `json:"chef_type,omitempty"`
+	AutomaticAttributes map[string]interface{} `json:"automatic,omitempty"`
 	NormalAttributes    map[string]interface{} `json:"normal"`
-	DefaultAttributes   map[string]interface{} `json:"default"`
-	OverrideAttributes  map[string]interface{} `json:"override"`
-	JsonClass           string                 `json:"json_class"`
+	DefaultAttributes   map[string]interface{} `json:"default,omitempty"`
+	OverrideAttributes  map[string]interface{} `json:"override,omitempty"`
+	JsonClass           string                 `json:"json_class,omitempty"`
 	RunList             []string               `json:"run_list"`
 }
 
